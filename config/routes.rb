@@ -9,6 +9,11 @@ Spreemexican::Application.routes.draw do
           # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
+  comfy_route :cms_admin, :path => '/cmsadmin'
+
+  # Make sure this routeset is defined last
+  comfy_route :cms, :path => '/cms', :sitemap => false
+  
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
